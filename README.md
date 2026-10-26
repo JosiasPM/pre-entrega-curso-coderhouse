@@ -1,12 +1,19 @@
 # Blog Django
 
 ## Descripción
+
 Proyecto inicial de Django creado como parte de la Preentrega 7 del curso de Python. Incluye el proyecto `blog_project` y la aplicación `posts`.
 
 ## Instalación
 
-1. Clonar el repositorio de GitHub.
-2. Entrar en la carpeta del proyecto.
+1. Clonar el repositorio de GitHub:
+
+   `git clone https://github.com/JosiasPM/pre-entrega-curso-coderhouse.git`
+
+2. Entrar en la carpeta del proyecto:
+
+   `cd pre_entrega_7`
+
 3. Crear un entorno virtual:
 
    `py -m venv venv`
@@ -27,7 +34,7 @@ Iniciar el servidor con:
 
 Abrir en el navegador:
 
-`http://127.0.0.1:8000/`
+http://127.0.0.1:8000/
 
 ## Aplicación principal
 
