@@ -2,7 +2,8 @@
 
 ## Descripción
 
-Proyecto inicial de Django creado como parte de la Preentrega 7 del curso de Python. Incluye el proyecto `blog_project` y la aplicación `posts`.
+Blog creado con Django creado como parte de la Preentrega 8 del curso de Python. Incluye el proyecto `blog_project` y la aplicación `posts`, con templates HTML, herencia de plantillas y archivos estáticos (CSS).
+
 **Requisito:** Python 3.12 o posterior, compatible con Django 6.1.2.
 
 ## Instalación
@@ -17,17 +18,17 @@ Proyecto inicial de Django creado como parte de la Preentrega 7 del curso de Pyt
 
 3. Crear un entorno virtual:
 
-   `python -m venv venv`
+   `python -m venv .venv`
 
 4. Activar el entorno virtual:
 
    **Windows PowerShell:**
 
-   `.\venv\Scripts\Activate.ps1`
+   `.\.venv\Scripts\Activate.ps1`
 
    **Linux/macOS:**
 
-   `source venv/bin/activate`
+   `source .venv/bin/activate`
 
 5. Instalar las dependencias:
 
@@ -46,3 +47,13 @@ http://127.0.0.1:8000/
 ## Aplicación principal
 
 La aplicación principal creada es `posts`.
+
+## Páginas disponibles
+
+- Inicio: http://127.0.0.1:8000/
+- Acerca de: http://127.0.0.1:8000/acerca/
+
+## Estructura de la app posts
+
+- `posts/templates/posts/`: templates HTML (`base.html`, `inicio.html`, `acerca.html`)
+- `posts/static/posts/css/`: archivo de estilos (`estilos.css`)
