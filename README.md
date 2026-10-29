@@ -3,6 +3,7 @@
 ## Descripción
 
 Proyecto inicial de Django creado como parte de la Preentrega 7 del curso de Python. Incluye el proyecto `blog_project` y la aplicación `posts`.
+**Requisito:** Python 3.12 o posterior, compatible con Django 6.1.2.
 
 ## Instalación
 
@@ -12,19 +13,25 @@ Proyecto inicial de Django creado como parte de la Preentrega 7 del curso de Pyt
 
 2. Entrar en la carpeta del proyecto:
 
-   `cd pre_entrega_7`
+   `cd pre-entrega-curso-coderhouse`
 
 3. Crear un entorno virtual:
 
-   `py -m venv venv`
+   `python -m venv venv`
 
-4. Activar el entorno virtual en Windows PowerShell:
+4. Activar el entorno virtual:
+
+   **Windows PowerShell:**
 
    `.\venv\Scripts\Activate.ps1`
 
+   **Linux/macOS:**
+
+   `source venv/bin/activate`
+
 5. Instalar las dependencias:
 
-   `pip install -r requirements.txt`
+   `python -m pip install -r requirements.txt`
 
 ## Ejecución
 
