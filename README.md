@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Blog creado con Django creado como parte de la Preentrega 8 del curso de Python. Incluye el proyecto `blog_project` y la aplicación `posts`, con templates HTML, herencia de plantillas y archivos estáticos (CSS).
+Blog creado con Django como parte de la Preentrega 9 del curso de Python. Incluye el proyecto `blog_project` y la aplicación `posts`, con templates HTML, herencia de plantillas, archivos estáticos (CSS), modelos y panel de administración.
 
 **Requisito:** Python 3.12 o posterior, compatible con Django 6.1.2.
 
@@ -24,7 +24,7 @@ Blog creado con Django creado como parte de la Preentrega 8 del curso de Python.
 
    **Windows PowerShell:**
 
-   `.\.venv\Scripts\Activate.ps1`
+   `.venv\Scripts\Activate.ps1`
 
    **Linux/macOS:**
 
@@ -33,6 +33,28 @@ Blog creado con Django creado como parte de la Preentrega 8 del curso de Python.
 5. Instalar las dependencias:
 
    `python -m pip install -r requirements.txt`
+
+## Base de datos
+
+Aplicar las migraciones:
+
+`python manage.py migrate`
+
+## Panel de administración
+
+Crear un superusuario:
+
+`python manage.py createsuperuser`
+
+Iniciar el servidor:
+
+`python manage.py runserver`
+
+Acceder al panel de administración:
+
+http://127.0.0.1:8000/admin/
+
+Desde el panel se pueden crear, editar y administrar publicaciones.
 
 ## Ejecución
 
@@ -52,8 +74,16 @@ La aplicación principal creada es `posts`.
 
 - Inicio: http://127.0.0.1:8000/
 - Acerca de: http://127.0.0.1:8000/acerca/
+- Posts: http://127.0.0.1:8000/posts/
+- Administración: http://127.0.0.1:8000/admin/
+
+La página Posts muestra las publicaciones cuyo estado es Publicado, ordenadas desde la más reciente.
 
 ## Estructura de la app posts
 
-- `posts/templates/posts/`: templates HTML (`base.html`, `inicio.html`, `acerca.html`)
-- `posts/static/posts/css/`: archivo de estilos (`estilos.css`)
+- `posts/models.py`: modelo Post.
+- `posts/admin.py`: configuración del panel de administración.
+- `posts/views.py`: vistas de la aplicación.
+- `posts/urls.py`: rutas de la aplicación.
+- `posts/templates/posts/`: templates HTML (`base.html`, `inicio.html`, `acerca.html`, `lista_posts.html`).
+- `posts/static/posts/css/`: archivo de estilos (`estilos.css`).
