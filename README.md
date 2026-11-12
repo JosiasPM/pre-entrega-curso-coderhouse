@@ -56,6 +56,10 @@ http://127.0.0.1:8000/admin/
 
 Desde el panel se pueden crear, editar y administrar publicaciones.
 
+Se creó un superusuario para acceder al panel de administración y se cargaron 3 publicaciones de prueba con diferentes estados: borrador, publicado y archivado.
+
+La base de datos SQLite (db.sqlite3) se mantiene de forma local y no se incluye en el repositorio. La base de datos puede recrearse ejecutando las migraciones del proyecto.
+
 ## Ejecución
 
 Iniciar el servidor con:
